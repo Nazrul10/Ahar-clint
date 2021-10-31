@@ -9,7 +9,7 @@ const MyOrders = () => {
     console.log(data);
     const {user} = useAuth()
     useEffect(()=>{
-        fetch(`http://localhost:5000/myallorder/${user?.email}`)
+        fetch(`https://still-anchorage-64022.herokuapp.com/myallorder/${user?.email}`)
        .then((res) => res.json())
        .then(result => {
         setData(result)
@@ -18,7 +18,7 @@ const MyOrders = () => {
     const handleDelete = (id) =>{
         const proceed = window.confirm('Are you sure, you want to delete?')
         if(proceed){
-            fetch(`http://localhost:5000/deleteProduct/${id}`, {
+            fetch(`https://still-anchorage-64022.herokuapp.com/deleteProduct/${id}`, {
             method: "DELETE",
             headers: { "Content-type": "application/json" },
           })

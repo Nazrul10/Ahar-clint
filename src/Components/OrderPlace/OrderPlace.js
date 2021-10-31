@@ -12,7 +12,7 @@ const OrderPlace = () => {
     console.log('details', details?.name);
     const {orderId} = useParams()
     useEffect(()=>{
-        fetch(`http://localhost:5000/placeorder/${orderId}`)
+        fetch(`https://still-anchorage-64022.herokuapp.com/placeorder/${orderId}`)
        .then((res) => res.json())
        .then(result => {
         setDetails(result);
@@ -22,7 +22,7 @@ const OrderPlace = () => {
     const { register, handleSubmit, reset} = useForm({});
     const onSubmit = (data) =>{
         console.log(data);
-        fetch("http://localhost:5000/myorders", {
+        fetch("https://still-anchorage-64022.herokuapp.com/myorders", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),

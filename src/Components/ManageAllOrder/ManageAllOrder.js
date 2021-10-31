@@ -7,7 +7,7 @@ const ManageAllOrder = () => {
     const [allorder, setOrder] = useState()
     console.log(allorder);
     useEffect(()=>{
-        fetch('http://localhost:5000/manageall')
+        fetch('https://still-anchorage-64022.herokuapp.com/manageall')
         .then(res => res.json())
         .then(data =>{
             setOrder(data)
@@ -16,7 +16,7 @@ const ManageAllOrder = () => {
     const handleManageDelete = id =>{
         const proceed = window.confirm('Are you sure, you want to delete')
         if(proceed){
-            fetch(`http://localhost:5000/deletemanage/${id}`, {
+            fetch(`https://still-anchorage-64022.herokuapp.com/deletemanage/${id}`, {
             method: "DELETE",
             headers: { "Content-type": "application/json" },
           })

@@ -8,7 +8,7 @@ const AddFood = () => {
     const { register, handleSubmit, reset } = useForm();
     // Submit your data into store
     const onSubmit = data =>{
-        fetch("http://localhost:5000/addfood", {
+        fetch("https://still-anchorage-64022.herokuapp.com/addfood", {
          method: "POST",
          headers: { "content-type": "application/json" },
          body: JSON.stringify(data),
