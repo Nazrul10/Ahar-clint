@@ -1,5 +1,5 @@
 .banner-container{
-    background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://i.ibb.co/yWsNwpg/cristiano-pinto-2l-WGQ02-DGL8-unsplash.jpg)no-repeat top/ cover;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://i.ibb.co/yWsNwpg/cristiano-pinto-2l-WGQ02-DGL8-unsplash.jpg) fixed no-repeat top/ cover;
     height: 100vh;
 }
 .banner-container h1{

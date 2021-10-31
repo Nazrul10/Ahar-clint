@@ -1,0 +1,13 @@
+.meet-container{
+    background: url(https://i.ibb.co/7gtzN6v/21.jpg) fixed top center / cover;
+    padding: 2rem;
+}
+.div-meet{
+    color: #fff;
+    margin: 1rem;
+}
+.details-name{
+    text-align: center;
+    background-color: #057294;
+    padding: 1rem;
+}
