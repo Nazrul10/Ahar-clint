@@ -35,6 +35,10 @@ const MyOrders = () => {
             });
         }
     }
+    //handle update
+    // const handleUpdate = id =>{
+
+    // }
     return (
         <div className="row">
             <Header></Header>
@@ -74,10 +78,13 @@ const MyOrders = () => {
 											<div className="promotion-price-text">$ {order.price}</div>                                    
 										</div>
 									</div>
-									<div className="card-footer">
+									<div className="card-footer d-flex justify-content-around">
                                         <button 
                                         onClick={()=>handleDelete(`${order._id}`)}
                                         className="btn btn-warning">Delete</button>
+                                        <h3
+                                       
+                                        className="btn btn-danger">{order.status}</h3>
                                     </div>
 								</div>
 							</div>

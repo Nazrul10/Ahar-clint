@@ -21,6 +21,7 @@ const OrderPlace = () => {
 
     const { register, handleSubmit, reset} = useForm({});
     const onSubmit = (data) =>{
+        data.status = "panding"
         console.log(data);
         fetch("https://still-anchorage-64022.herokuapp.com/myorders", {
             method: "POST",
@@ -33,9 +34,8 @@ const OrderPlace = () => {
                    alert("Order is Inserted");
                }
            });
-        reset()
+           reset()
     }
- 
     return (
             <div className="row">
                 <Header></Header>

@@ -3,7 +3,7 @@ import Footer from '../Shared/Footer/Footer';
 import Header from '../Shared/Header/Header';
 import './ManageAll.css'
 const ManageAllOrder = () => {
-    // const [isDelete, setIsDelete]= useState()
+    const [isDelete, setIsDelete]= useState()
     const [allorder, setOrder] = useState()
     console.log(allorder);
     useEffect(()=>{
@@ -12,7 +12,7 @@ const ManageAllOrder = () => {
         .then(data =>{
             setOrder(data)
         })
-    },[])
+    },[isDelete])
     const handleManageDelete = id =>{
         const proceed = window.confirm('Are you sure, you want to delete')
         if(proceed){
@@ -35,6 +35,23 @@ const ManageAllOrder = () => {
             }
             });
         }
+    }
+    //update status
+    const handleStatus = id =>{
+        fetch(`https://still-anchorage-64022.herokuapp.com/status/${id}`, {
+            method: "PUT",
+            headers: { "Content-type": "application/json" },
+            body: JSON.stringify(allorder)
+          })
+          .then(res => res.json())
+          .then(result => {
+                if (result.acknowledged) {
+                          alert('your order has been approved')
+                        setIsDelete(true);
+                      } else {
+                        setIsDelete(false);
+                      }
+          })
     }
     return (
         <div>
@@ -60,10 +77,14 @@ const ManageAllOrder = () => {
 											<div className="promotion-price-text">$ {order.price}</div>                                    
 										</div>
 									</div>
-									<div className="card-footer">
+									<div className="card-footer d-flex
+                                    justify-content-around">
                                         <button 
                                         onClick={()=>handleManageDelete(`${order._id}`)}
                                         className="btn btn-warning">Delete</button>
+                                        <button 
+                                        onClick={()=>handleStatus(`${order._id}`)}
+                                        className="btn btn-warning">{order?.status}</button>
                                     </div>
 								</div>
 							</div>

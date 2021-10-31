@@ -19,10 +19,10 @@ const Header = () => {
     fontWeight: "bold",
     color: "red"
   }} className="m-2 nav-style" to="/home">Home</NavLink>
-      <NavLink activeStyle={{
+      {user.email && <NavLink activeStyle={{
     fontWeight: "bold",
     color: "red"
-  }} className="m-2 nav-style" to="/orders">My Orders</NavLink>
+  }} className="m-2 nav-style" to="/orders">My Orders</NavLink>}
       <NavLink activeStyle={{
     fontWeight: "bold",
     color: "red"
