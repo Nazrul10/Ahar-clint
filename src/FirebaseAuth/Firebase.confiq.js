@@ -5,12 +5,12 @@ const firebaseConfig = {
     // storageBucket: process.env.REACT_APP_STROAGEBUCKET,
     // messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID,
     // appId: process.env.REACT_APP_APPID
-    apiKey: "AIzaSyCBjM2Jzfyp4aikKeiAt9kG3h9szps9fJk",
-    authDomain: "tourist-hotel-main.firebaseapp.com",
-    projectId: "tourist-hotel-main",
-    storageBucket: "tourist-hotel-main.appspot.com",
-    messagingSenderId: "384319816684",
-    appId: "1:384319816684:web:12c7efe320205a91a7b6c9"
+    apiKey: "AIzaSyAAPx0ij0c7Kq7HzHZSwbV7scSCYhuiFuU",
+  authDomain: "food-delivery-service-5b736.firebaseapp.com",
+  projectId: "food-delivery-service-5b736",
+  storageBucket: "food-delivery-service-5b736.appspot.com",
+  messagingSenderId: "205566830779",
+  appId: "1:205566830779:web:5859435b227896c515e19e"
   };
 
   export default firebaseConfig;
