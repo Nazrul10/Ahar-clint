@@ -1,0 +1,21 @@
+.btn-google{
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+
+}
+.btn-google {background-image: linear-gradient(to right, #000000 0%, #e74c3c  51%, #000000  100%)}
+.btn-google {
+   padding: 15px 45px;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+ }
+
+ .btn-google:hover {
+   background-position: right center; 
+ }

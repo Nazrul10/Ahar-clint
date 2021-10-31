@@ -1,0 +1,28 @@
+.orders-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+}
+.order-body  {
+	 position: relative;
+	 z-index: 0;
+	 overflow: hidden;
+}
+.users{
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    margin: 1rem;
+    background-color: aquamarine;
+    border: 3px solid red;
+    border-radius: 10px;
+    
+}
+.userFnd0{
+    text-align: center;
+}
+
+.userFnd2{
+    font-size: 1rem;
+}
+ 
+ 
