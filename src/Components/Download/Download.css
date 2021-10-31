@@ -1,0 +1,15 @@
+.dwn-main{
+    background: url(https://i.ibb.co/3SGsYHm/bg.png) top center / cover, #fff;
+    height: 100vh;
+    overflow: hidden;
+}
+.play-store{
+    margin-top: 70%;
+}
+.app-text{
+    color: rgb(255, 0, 0);
+    text-align: right;
+    margin-top: 30%;
+    padding: 1rem;
+    font-weight: 900;
+}

@@ -6,6 +6,7 @@
  body {
 	 background-color: rgb(19, 33, 93);
 	 font-family: 'Open Sans', Arial, Verdana;
+	 /* overflow: hidden; */
 }
 
  .card {

@@ -25,3 +25,8 @@
     margin-top: 1rem;
     border: solid rgb(255, 255, 255) 1px;
 }
+@media only screen  and (max-width:1237px) {
+    .banner-container Button{
+        display: none;
+    }
+}
