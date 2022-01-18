@@ -47,6 +47,7 @@ function App() {
     </AuthContext>
     // <div>
     //   <Home></Home>
+    //this is a comment
     // </div>
   );
 }
